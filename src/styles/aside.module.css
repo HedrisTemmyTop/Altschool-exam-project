@@ -1,0 +1,43 @@
+.Stats {
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: var(--box-color);
+}
+.Aside {
+  box-sizing: border-box;
+  flex-basis: 20%;
+}
+.Box {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.Box ion-icon {
+  margin-right: 2rem;
+  color: white;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: var(--input-color);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .Aside {
+    flex-basis: 30%;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .Aside {
+    margin-top: 4rem;
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .Stats {
+    padding: 1rem;
+    margin: auto;
+    width: 90%;
+  }
+}

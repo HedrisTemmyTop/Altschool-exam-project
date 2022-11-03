@@ -1,0 +1,34 @@
+:root {
+  --default-background: #1e252b;
+  --box-color: #262d35;
+  --text-color: #c0c5cb;
+  --button-color: #13b164;
+  --white: #fff;
+  --input-color: #2c353e;
+  --default-font: 1.6rem;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--default-font);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@media only screen and (max-width: 365px) {
+  html {
+    font-size: 8px;
+  }
+}

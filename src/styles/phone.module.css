@@ -1,0 +1,26 @@
+.Header {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.Link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.NavItem {
+  margin-bottom: 2rem;
+}
+
+.Link:hover,
+.active {
+  background-color: var(--input-color);
+}
+@media only screen and (min-width: 1001px) {
+  .Header {
+    display: none;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

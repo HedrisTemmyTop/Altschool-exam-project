@@ -1,0 +1,23 @@
+.App {
+  background-color: var(--default-background);
+  min-height: 100vh;
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+.Layout {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 860px) {
+  .Layout {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+}

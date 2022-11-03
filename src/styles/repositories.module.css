@@ -1,0 +1,24 @@
+.repos {
+  margin-top: 4rem;
+  background-color: var(--box-color);
+  margin-bottom: 2rem;
+}
+.Links {
+  display: flex;
+  align-items: center;
+}
+.Link {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: var(--text-color);
+}
+.Active {
+  border-bottom: 2px solid var(--white);
+}
+.Repositories {
+  background-color: var(--box-color);
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+}
