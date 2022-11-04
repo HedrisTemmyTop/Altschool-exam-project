@@ -28,7 +28,7 @@ const Repositries = (props) => {
           color: "#fff",
         }}
       >
-        Here are your repositories sorted in order of latest
+        Here are your repositories sorted alphabetically
       </h2>
       <Outlet />
       <Repos repos={repos} />

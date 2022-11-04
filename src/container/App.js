@@ -24,6 +24,7 @@ function App() {
   const [reps, setReps] = useState(null);
   const [showError, setShowError] = useState(false);
   const [error, setError] = useState(null);
+  const [appError, setAppError] = useState(null);
 
   useEffect(() => {
     axiosInstance
@@ -32,7 +33,7 @@ function App() {
         setGithubData(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        setAppError(error.message);
       });
     axiosInstance
       .get(`users/${user}/repos`)
@@ -49,8 +50,7 @@ function App() {
           public_repos: 0,
           bio: "",
         });
-
-        console.log(error);
+        setAppError(error.message);
       });
   }, [user]);
   const findUser = (e, user) => {
@@ -68,6 +68,9 @@ function App() {
         setError(err.response.data.message);
       });
   };
+  if (appError !== null) {
+    throw new Error(appError);
+  }
   return (
     <div className="App">
       <Header

@@ -7,7 +7,6 @@ const Overview = (props) => {
   const [repos, setRepos] = useState(null);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
-  console.log(props);
   useEffect(() => {
     axiosInstance
       .get(`users/${props.user}/repos`)
@@ -20,7 +19,6 @@ const Overview = (props) => {
       })
       .catch((error) => {
         setError(true);
-        console.log(error);
         setErrorMessage(error.message);
       });
   }, [props.user]);

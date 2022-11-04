@@ -87,3 +87,14 @@
     position: absolute;
   }
 }
+@media only screen and (max-width: 412px) {
+  .Image {
+    margin-right: 0.5rem;
+  }
+  .Header {
+    padding: 0.5rem 2rem;
+  }
+  .Menu {
+    transform: translateX(-1rem);
+  }
+}
