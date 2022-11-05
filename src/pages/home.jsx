@@ -16,11 +16,7 @@ const Home = (props) => {
             props.findUser(e, document.getElementById("search").value);
           }}
         >
-          <img
-            src={props.image}
-            className={classes.UserImage}
-            alt="user image "
-          />
+          <img src={props.image} className={classes.UserImage} alt="photo" />
           <input
             type="search"
             id="search"

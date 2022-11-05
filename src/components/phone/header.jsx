@@ -23,7 +23,7 @@ const Header = ({ style }) => {
               Home
             </Link>{" "}
           </li>
-         
+
           <li className={[classes.NavItem].join(" ")}>
             <Link className={classes.Link} to="about">
               About
@@ -37,6 +37,11 @@ const Header = ({ style }) => {
           <li className={[classes.NavItem].join(" ")}>
             <Link className={classes.Link} to="terms&conditions">
               Terms & Conditions
+            </Link>{" "}
+          </li>
+          <li className={[classes.NavItem].join(" ")}>
+            <Link className={classes.Link} to="error-page">
+              Error page
             </Link>{" "}
           </li>
 

@@ -40,6 +40,15 @@ const Sidebar = () => {
           <div>Help</div>
         </NavLink>
         <NavLink
+          to="error-page"
+          className={({ isActive }) =>
+            isActive ? [classes.Link, classes.active].join(" ") : classes.Link
+          }
+        >
+          <div>Error page</div>
+        </NavLink>
+
+        <NavLink
           to="terms&conditions"
           className={({ isActive }) =>
             isActive ? [classes.Link, classes.active].join(" ") : classes.Link

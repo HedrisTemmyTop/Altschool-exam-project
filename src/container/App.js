@@ -12,12 +12,16 @@ import InvalidRoute from "../pages/404";
 import Privacy from "../pages/privacy";
 import About from "../pages/about";
 import Loader from "../components/loader";
-import Help from "../components/help";
+import Help from "../pages/help";
 import axiosInstance from "./axios-instance";
 import Repo from "../components/repo";
 import Error from "../components/Error";
 import defaultImage from "../assets/img/default.png";
 import ErrorBoundary from "../components/ErrorBoundary";
+import ErrorPage from "../pages/ErrorPage";
+
+/////////////////////////////////
+
 function App() {
   const [user, setUser] = useState("HedrisTemmyTop");
   const [githubData, setGithubData] = useState(null);
@@ -65,7 +69,7 @@ function App() {
       .catch((err) => {
         setShowError(true);
 
-        setError(err.response.data.message);
+        setError(err.message);
       });
   };
   if (appError !== null) {
@@ -119,7 +123,14 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="help" element={<Help />} />
-
+          <Route
+            path="error-page"
+            element={
+              <ErrorBoundary>
+                <ErrorPage />
+              </ErrorBoundary>
+            }
+          />
           <Route path="*" element={<InvalidRoute />} />
         </Routes>
         <Aside
