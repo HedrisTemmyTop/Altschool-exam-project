@@ -100,7 +100,11 @@ function App() {
               element={
                 <ErrorBoundary>
                   <Overview user={user}>
-                    {githubData ? <div>{githubData.bio}</div> : <Loader />}
+                    {githubData ? (
+                      <div style={{ maxWidth: "95%" }}>{githubData.bio}</div>
+                    ) : (
+                      <Loader />
+                    )}
                   </Overview>
                 </ErrorBoundary>
               }

@@ -83,6 +83,7 @@
   }
   .Logo {
     left: 40%;
+    display: none;
     transform: translateX(-50%);
     position: absolute;
   }
