@@ -30,14 +30,12 @@
 }
 @media only screen and (max-width: 860px) {
   .Aside {
-    margin-top: 4rem;
-    width: 35rem;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 370px) {
   .Stats {
     padding: 1rem;
-    margin: auto;
-    width: 90%;
   }
 }

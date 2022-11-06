@@ -72,9 +72,7 @@ function App() {
         setError(err.message);
       });
   };
-  if (appError !== null) {
-    throw new Error(appError);
-  }
+
   return (
     <div className="App">
       <Header

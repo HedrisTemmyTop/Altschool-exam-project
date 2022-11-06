@@ -4,7 +4,7 @@ import classes from "../styles/sidebar.module.css";
 const Sidebar = () => {
   return (
     <aside className={classes.Aside}>
-      <div className={classes.Head}>Main Tools</div>
+      <div className={classes.Head}>Menu</div>
       <nav className={classes.Nav}>
         <NavLink
           to=""

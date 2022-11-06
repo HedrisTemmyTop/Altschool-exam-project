@@ -16,26 +16,34 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <div
-          onClick={() => {
-            this.setState({ hasError: false });
-          }}
           style={{
-            position: "fixed",
-            backgroundColor: "white",
-            left: "50%",
-            transform: " translateX(-50%)",
-
-            bottom: "2rem",
-            width: "25rem",
-            height: "5rem",
-            color: "black",
-            borderRadius: "50px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            padding: "4rem",
+            flexBasis: "50%",
+            boxSizing: "border-box",
           }}
         >
-          {this.state.error.message}
+          <div
+            onClick={() => {
+              this.setState({ hasError: false });
+            }}
+            style={{
+              position: "fixed",
+              backgroundColor: "white",
+              left: "50%",
+              transform: " translateX(-50%)",
+
+              bottom: "2rem",
+              width: "25rem",
+              height: "5rem",
+              color: "black",
+              borderRadius: "50px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {this.state.error.message}
+          </div>
         </div>
       );
       //   return <Error show={true} error={this.state.error} />;
