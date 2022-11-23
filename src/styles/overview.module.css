@@ -61,3 +61,8 @@
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 860px) {
+  .Aside {
+    margin-bottom: 0rem;
+  }
+}
